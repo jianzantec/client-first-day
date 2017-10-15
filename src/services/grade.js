@@ -13,5 +13,6 @@ export function getData(id) {
  * @returns 返回Promise对象
  */
 export function create(payload) {
-  return post('/api/v1/grade', payload);
+  // console.log(payload);
+  return post('/api/v1/grades', payload);
 }

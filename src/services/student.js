@@ -1,4 +1,4 @@
-import { get, post } from '../utils/request';
+import { get, post, deleteOne } from '../utils/request';
 
 // 获取学生信息
 export function getData(id) {
@@ -13,6 +13,14 @@ export function getData(id) {
  * @returns 返回Promise对象
  */
 export function create(payload) {
-  console.log(payload);
+  // console.log(payload);
   return post('/api/v1/students', payload);
+}
+
+/**
+ * 根据id删除记录
+ * @param {*} id 需要删除的记录的id
+ */
+export function deleteItem(id) {
+  return deleteOne(`/api/v1/students/${id}.json`);
 }

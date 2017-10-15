@@ -1,8 +1,10 @@
-
 .normal {
   font-family: Georgia, sans-serif;
-  margin-top: 3em;
+  /* margin-top: 3em; */
   text-align: center;
+}
+.main{
+  height: 100%;
 }
 
 .title {
@@ -26,4 +28,24 @@
 
 .list code {
   background: #f7f7f7;
+}
+.trigger {
+  font-size: 18px;
+  line-height: 64px;
+  padding: 0 16px;
+  cursor: pointer;
+  transition: color .3s;
+  position: fixed;
+  z-index: 999;
+}
+.grade-container{
+  background-color: #ebf8f2;
+  border: 1px solid #cfefdf;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+.grade-item{
+  padding: 0.5rem 1rem;
+  border-radius: 0;
+  display: inline;
 }

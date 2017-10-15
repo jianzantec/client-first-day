@@ -27,3 +27,15 @@ export function post(url, data, isLocal = true) {
   }
   return axios.post(url, data);
 }
+
+/**
+ * 删除数据
+ * @param {*} url 删除操作
+ * @param {*} isLocal 是否本地服务器
+ */
+export function deleteOne(url, isLocal = true) {
+  if (isLocal) {
+    url = server + url;
+  }
+  return axios.delete(url);
+}
